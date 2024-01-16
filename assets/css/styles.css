@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --black: rgb(17, 17, 17);
+  --soft-black: rgb(51, 51, 51);
+  --soft-white: rgb(213, 213, 213);
+  --blue: rgb(89, 89, 228);
+  --soft-blue: rgb(134, 134, 233);
+  --green: rgb(89, 228, 89);
+  --soft-green: rgb(134, 233, 134);
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--soft-white);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  background-color: var(--soft-black);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 12px;
+  padding: 3%;
+  width: 95vw;
+  max-width: 430px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  font-size: 3rem;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+label {
+  margin-bottom: 2%;
+  font-weight: 600;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+  padding: 3% 2%;
+  outline: none;
+  flex: 7;
+}
+
+input:focus {
+  border-color: var(--soft-blue);
+}
+
+.input-wrap {
+  display: flex;
+}
+
+#email-input-wrap {
+  margin-bottom: 3.5%;
+}
+
+.bi {
+  border: 1px solid rgba(255, 255, 255, .2);
+  flex: 1;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  color: rgba(255, 255, 255, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bi:active {
+  color: var(--soft-white);
+}
+
+button {
+  background-color: transparent;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
+  padding: 3%;
+  width: 100%;
+  cursor: pointer;
+}
+
+#login-button {
+  margin-top: 2.5%;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+#login-button:active {
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
+}
+
+#new-account {
+  margin-top: 2.5%;
+  color: var(--green);
+  border-color: var(--green);
+}
+
+#new-account:active {
+  color: var(--soft-green);
+  border-color: var(--soft-green);
+}
+
+#forgot-password {
+  color: var(--soft-white);
+  margin: 2.5% 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
